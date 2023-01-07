@@ -230,9 +230,9 @@ if __name__ == '__main__':
             pos.append(numerator)
             neg.append(denominator)
         
-        print('outcome:', compressed_set_validation[compressed_set_validation['Sequence_ID']==seq_id]['Outcome_Next_Day_Direction'].values[0])
-        print(sum(pos)/sum(neg))
-        print(sum(log_odds))
+        # print('outcome:', compressed_set_validation[compressed_set_validation['Sequence_ID']==seq_id]['Outcome_Next_Day_Direction'].values[0])
+        # print(sum(pos)/sum(neg))
+        # print(sum(log_odds))
 
         actual.append(compressed_set_validation[compressed_set_validation['Sequence_ID']==seq_id]['Outcome_Next_Day_Direction'].values[0])
         predicted.append(sum(log_odds))
